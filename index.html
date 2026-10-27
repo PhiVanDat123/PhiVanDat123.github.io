@@ -32,6 +32,7 @@
   .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
   .links a{border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:999px;font-size:.9rem;color:var(--fg)}
   .links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+  h3{font-size:1.1rem;margin:26px 0 10px}
   ul{padding-left:20px}
   li{margin-bottom:12px}
   .pub .title{font-weight:600}
@@ -46,6 +47,8 @@
 <nav>
   <div class="inner">
     <a href="#main">Main</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
     <a href="#news">News</a>
     <a href="#publications">Publications</a>
     <a href="#experience">Experience</a>
@@ -62,7 +65,7 @@
     <div>
       <h1>Phi Van Dat</h1>
       <p>AI Resident · Machine Learning Researcher</p>
-      <p><a href="https://vinuni.edu.vn/">Center for AI Research, VinUniversity</a></p>
+      <p><a href="https://cair.vinuni.edu.vn/">Center for AI Research, VinUniversity</a></p>
       <p><a href="https://hust.edu.vn/">Hanoi University of Science and Technology (HUST)</a></p>
       <p>Email: <a href="mailto:phivandat2005@gmail.com">phivandat2005@gmail.com</a></p>
       <div class="links">
@@ -74,7 +77,26 @@
     </div>
   </div>
 
-  <section>
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Welcome to my homepage! My full name is Phi Van Dat, you can call me Dat 👋. I am currently an AI Resident
+      at the <a href="https://cair.vinuni.edu.vn/">Center for AI Research, VinUniversity</a> 🤖, where I am supervised by
+      <a href="https://vinuni.edu.vn/vi/people/dinh-ngoc-thanh-2/">Prof. Dinh Ngoc Thanh</a> and mentored by
+      <a href="https://sites.google.com/view/trungle/">Dr. Trung Le</a> (Monash University).
+      I am also a research student at the Foundation Model Lab, BKAI, HUST, working on knowledge distillation with
+      <a href="https://users.soict.hust.edu.vn/linhnv/">Dr. Ngo Van Linh</a>, and an undergraduate student in Computer Science at
+      <a href="https://hust.edu.vn/">Hanoi University of Science and Technology</a>.
+    </p>
+    <p><strong>Positions:</strong> I am currently looking for <strong>PhD opportunities in Machine Learning</strong>
+      for the next academic cycle, with research interests in preference learning and optimization.
+      I am also eager to explore related research directions.</p>
+  </section>
+
+  <!-- ========== RESEARCH INTERESTS ========== -->
+  <section id="research">
+    <h2>Research Interests</h2>
     <p>
       My research focuses on developing novel methods in <strong>Machine Learning</strong>, with an emphasis on
       improving learning algorithms and optimization techniques. I have a primary interest in
@@ -82,16 +104,6 @@
       learning from human preferences and designing optimization algorithms. I am eager to explore related
       research directions.
     </p>
-    <p>
-      I am currently an AI Resident at the Center for AI Research, VinUniversity, supervised by
-      <a href="https://vinuni.edu.vn/vi/people/dinh-ngoc-thanh-2/">Prof. Dinh Ngoc Thanh</a> and mentored by
-      <a href="https://sites.google.com/view/trungle/">Dr. Trung Le</a>
-      (Monash University). I am also a research student at the Foundation Model Lab, BKAI, HUST, working on
-      knowledge distillation under <a href="https://users.soict.hust.edu.vn/linhnv/">Dr. Ngo Van Linh</a>, and an undergraduate in Computer Science at HUST.
-    </p>
-    <p><strong>Positions:</strong> I am currently looking for <strong>PhD opportunities in Machine Learning</strong>
-      for the next academic cycle, with research interests in preference learning and optimization.
-      I am also eager to explore related research directions.</p>
   </section>
 
   <!-- ========== NEWS ========== -->
@@ -100,8 +112,8 @@
     <ul>
       <li><span class="date">Sep 2026:</span> Started as an AI Resident at the Center for AI Research, VinUniversity.</li>
       <li><span class="date">Jul 2026:</span> Research internship at the Computer Science Lab, University of Wyoming (distributed machine learning).</li>
-      <li><span class="date">2026:</span> <em>DWA-KD</em> accepted at <strong>EACL 2026</strong>.</li>
-      <li><span class="date">2026:</span> <em>CTPD: Cross Tokenizer Preference Distillation</em> accepted at <strong>AAAI 2026</strong>.</li>
+      <li><span class="date">Jan 3, 2026:</span> <em>DWA-KD</em> accepted at <strong>EACL 2026</strong>.</li>
+      <li><span class="date">Nov 8, 2025:</span> <em>CTPD: Cross Tokenizer Preference Distillation</em> accepted at <strong>AAAI 2026</strong>.</li>
     </ul>
   </section>
 
@@ -109,47 +121,46 @@
   <section id="publications">
     <h2>Publications</h2>
     <ul class="pub">
-
       <li>
-        <div class="title">Orthogonal Witness Control for Muon Optimization via Sigmoid Spectral Reshaping <span class="tag">Preprint</span></div>
-        <div class="meta"><strong>Dat Phi Van</strong>*, Ngo Vu Minh*, Tuc Nguyen*, Thin Nguyen, Ngoc-Thanh Dinh, Trung Le. (*Equal contribution)<br>Under review</div>
-      </li>
-
-      <li>
-        <div class="title">CTPD: Cross Tokenizer Preference Distillation</div>
+        <div class="title"><a href="https://arxiv.org/abs/2601.11865">CTPD: Cross Tokenizer Preference Distillation</a></div>
         <div class="meta">Truong Nguyen*, <strong>Phi Van Dat</strong>*, Ngan Nguyen*, Linh Ngo Van, Trung Le, Thanh Hong Nguyen. (*Equal contribution)<br><strong>AAAI 2026</strong></div>
       </li>
-
       <li>
-        <div class="title">DWA-KD: Dual-Space Weighting and Time-Warped Alignment for Cross-Tokenizer Knowledge Distillation</div>
+        <div class="title"><a href="https://aclanthology.org/2026.findings-eacl.181/">DWA-KD: Dual-Space Weighting and Time-Warped Alignment for Cross-Tokenizer Knowledge Distillation</a></div>
         <div class="meta">Duc Trung Vu*, Pham Khanh Chi*, <strong>Dat Phi Van</strong>*, Linh Ngo Van, Dinh Viet Sang, Trung Le. (*Equal contribution)<br><strong>EACL 2026</strong></div>
       </li>
+    </ul>
 
+    <h3>Preprints</h3>
+    <ul class="pub">
+      <li>
+        <div class="title"><a href="https://arxiv.org/abs/2609.33194">Orthogonal Witness Control for Muon Optimization via Sigmoid Spectral Reshaping</a> <span class="tag">Preprint</span></div>
+        <div class="meta"><strong>Dat Phi Van</strong>*, Ngo Vu Minh*, Tuc Nguyen*, Thin Nguyen, Ngoc-Thanh Dinh, Trung Le. (*Equal contribution)<br>Under review</div>
+      </li>
+    </ul>
+
+    <h3>Under Review</h3>
+    <ul class="pub">
       <li>
         <div class="title">GeoDPO: Geometric Token Importance for Stable LLM Alignment</div>
-        <div class="meta"><strong>Dat Phi Van</strong> et al. · Under review (EACL 2027)</div>
+        <div class="meta"><strong>Dat Phi Van</strong> (first author) · Committed to EACL 2027</div>
       </li>
-
       <li>
         <div class="title">Multi-Level On-Policy Preference Distillation for Small Language Models</div>
-        <div class="meta"><strong>Dat Phi Van</strong> et al. · Under review (AAAI 2027)</div>
+        <div class="meta"><strong>Dat Phi Van</strong> (first author) · Under review (AAAI 2027)</div>
       </li>
-
       <li>
         <div class="title">Nested Risk-Aware Preference Distillation via Teacher Value Shaping</div>
-        <div class="meta"><strong>Dat Phi Van</strong> et al. · Under review (ACL 2027)</div>
+        <div class="meta"><strong>Dat Phi Van</strong> (first author) · Under review (ACL 2027)</div>
       </li>
-
       <li>
         <div class="title">Beyond Likelihood: A Preference Learning Perspective on Supervised Fine-Tuning</div>
-        <div class="meta"><strong>Dat Phi Van</strong> et al. · Under review (ACL 2027)</div>
+        <div class="meta"><strong>Dat Phi Van</strong> (first author) · Under review (ACL 2027)</div>
       </li>
-
       <li>
         <div class="title">A Survey on Human-AI Alignment: Taxonomy, Methods, and Challenges</div>
-        <div class="meta"><strong>Dat Phi Van</strong>* et al. (co-first author) · Under review (ACL 2027)</div>
+        <div class="meta"><strong>Dat Phi Van</strong> (co-first author) · Under review (ACL 2027)</div>
       </li>
-
     </ul>
   </section>
 
